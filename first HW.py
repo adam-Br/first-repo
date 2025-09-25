@@ -49,4 +49,3 @@ elif (a==b) or (b==c) or (c==a):
     print("Trojuholnik je rovnoramenny")
 elif aa or ab or ac == 90:
     print("")
-
