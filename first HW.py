@@ -6,8 +6,8 @@ b = int(input("Enter the length of side b: "))
 c = int(input("Enter the length of side c: "))
 
 #triangle check
-if a + b < c:
-    print("the sum of sides a and b cannot be less than c")
+if a + b < c and a + c < b and b + c < a:
+    print("this is not a triangle")
     exit()
 #CALCULATIONS:
 
@@ -41,3 +41,12 @@ ab = m.degrees(m.acos(((a**2)+(c**2)-(b**2))/(2*a*c)))
 ac = m.degrees(m.acos(((a**2)+(b**2)-(c**2))/(2*b*a)))
 
 print(f"Angles/Uhly (Degrees/Stupne): α:{aa}, β:{ab}, γ:{ac}")
+
+#tringle types
+if a==b==c:
+    print("Trojuholnik je rovnostranny")
+elif (a==b) or (b==c) or (c==a):
+    print("Trojuholnik je rovnoramenny")
+elif aa or ab or ac == 90:
+    print("")
+
